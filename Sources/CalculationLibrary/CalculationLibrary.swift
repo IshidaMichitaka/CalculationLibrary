@@ -3,11 +3,13 @@
 import Foundation
 
 public class CalculationLibrary {
-    func add(_ a: Int, _ b: Int) -> Int {
+    public init() {}
+    
+    public func add(_ a: Int, _ b: Int) -> Int {
         return a + b
     }
     
-    func subtraction(_ a: Int, _ b: Int) -> Int {
+    public func subtraction(_ a: Int, _ b: Int) -> Int {
         return a - b
     }
 }
