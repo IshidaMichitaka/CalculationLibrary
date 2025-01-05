@@ -16,7 +16,7 @@ Pod::Spec.new do |spec|
   #
 
   spec.name         = "CalculationLibrary"
-  spec.version      = "1.0.1"
+  spec.version      = "1.0.2"
   spec.summary      = "CalculationLibrary in swift"
   spec.homepage     = "https://github.com/IshidaMichitaka/CalculationLibrary"
   spec.swift_versions = "5.0"	
@@ -66,7 +66,7 @@ Pod::Spec.new do |spec|
   #
 
   # spec.platform     = :ios
-  spec.platform = :ios, '12.0'
+  spec.platform = :ios, "12.0"
 
 
   #  When using multiple platforms
@@ -93,8 +93,8 @@ Pod::Spec.new do |spec|
   #  Not including the public_header_files will make all headers public.
   #
 
-  spec.source_files  = "Sources/**/*"
-  # spec.exclude_files = "Sources/**/Info.plist"
+    spec.source_files  = "Sources/**/*.swift"
+    spec.exclude_files = "Sources/**/Info.plist"
   # spec.exclude_files = "Classes/Exclude"
 
   # spec.public_header_files = "Classes/**/*.h"
@@ -137,5 +137,7 @@ Pod::Spec.new do |spec|
 
   # spec.xcconfig = { "HEADER_SEARCH_PATHS" => "$(SDKROOT)/usr/include/libxml2" }
   # spec.dependency "JSONKit", "~> 1.4"
+  spec.requires_arc  = true
+
 
 end
